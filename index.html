@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital HV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="contenedor">
+            <div class="foto">
+                <img src="img/logo.png" alt="">
+            </div>
+            <h2 class="logo">
+                Administración hojas de vida
+            </h2>
+        </div>
+    </nav>
+    <!-- ------------MAIN--------------- -->
+    <main>
+        <div class="contenedor">
+            <div class="contenedorhijo">
+                <h class="subtitulo">ADMINISTRADOR GESTION HUMANA HV</h>
+            </div>
+
+            <div class="secciones" id="seccion">
+                <!--------------- ENCABEZADO --------->
+                <div class="encabezado">
+                    <button class="btn_encabezado" data-number="1">Procesos</button>
+                    <button class="btn_encabezado" data-number="2">Actividades</button>
+                    <button class="btn_encabezado" data-number="3">Requisitos Legales</button>
+                    <button class="btn_encabezado" data-number="4">Requisito - Actividad</button>
+                    <button class="btn_encabezado" data-number="5">Verificar Hoja De Vida</button>
+                    <button class="btn_encabezado" data-number="6">Reporte General</button>
+                </div>
+                <!-- --------------CONTENIDO----------->
+                <div class="contenido">
+                    <!-- --------------CONTENIDO PROCESOS----------->
+                    <div class="contenido_texto block" data-seccion="1">
+                        <h3 class="titulo">Procesos</h3>
+                        <div class="registrar">
+                            <!-- ---------TABLA--------- -->
+                            <div class="contenedor_tabla">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Proceso</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ---------FORMULARIO-------- -->
+                            <div class="formulario_procesos">
+                                <form class="for_proceso" action="">
+                                    <div class="formulario_grupo">
+                                        <label for="nombre_proceso">Nombre Proceso:</label>
+                                        <input class="input_proceso" type="text" name="nombreproceso"
+                                            id="nombre_proceso">
+                                    </div>
+                                    <button class="btn" type="submit">Guardar Proceso</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------CONTENIDO ACTIVIDADES----------->
+                    <div class="contenido_texto" data-seccion="2">
+                        <h3 class="titulo">Actividades</h3>
+                        <div class="registrar">
+                            <!-- ---------FORMULARIO-------- -->
+                            <div class="formulario_actividad">
+                                <form class="for_actividad" action="">
+                                    <div class="formulario_grupo">
+                                        <label class="label_actividad" for="tipo_actividad">Tipo Actividad:</label>
+                                        <input class="input_actividad" list="t_actividades" id="tipo_actividad">
+                                        <datalist id="t_actividades">
+                                            <option value="Asistencias">Asistencias</option>
+                                            <option value="otro1">otro1</option>
+                                            <option value="otro2">otro2</option>
+                                        </datalist>
+                                        <label class="label_actividad" for="nombre_actividad">Nombre Actividad:</label>
+                                        <input class="input_actividad" type="text" name="nombreactividad" id="nombre_actividad">
+                                    </div>
+                                    <button class="btn btn_actividad" type="submit">Guardar Actividad</button>
+                                </form>
+                            </div>
+                            <!-- ---------TABLA--------- -->
+                            <div class="contenedor_tabla">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Proceso</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------CONTENIDO REQUISITOS LEGALES----------->
+                    <div class="contenido_texto" data-seccion="3">
+                        <h3 class="titulo">Requisitos Legales</h3>
+                        <div class="registrar">
+                            <!-- ---------TABLA--------- -->
+                            <div class="contenedor_tabla">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Proceso</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ---------FORMULARIO-------- -->
+                            <div class="formulario_rlegales">
+                                <form class="for_rlegales" action="">
+                                    <div class="formulario_grupo">
+                                        <label for="nombre_requisito">Nombre Requisito:</label>
+                                        <input class="input_requisito" type="text" name="nombrerequisito"
+                                            id="nombre_requisito">
+                                    </div>
+                                    <button class="btn" type="submit">Guardar Requisito</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------CONTENIDO REQUISITOS-ACTIVIDAD----------->
+                    <div class="contenido_texto" data-seccion="4">
+                        <h3 class="titulo">Requisito - Actividad</h3>
+                        <div class="registrar2">
+                            <div class="contenedor_tabla1">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="contenedor_tabla2">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Proceso</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="contenedor_tabla3">
+                                <table class="contenido_tabla">
+                                    <thead class="text-bold">
+                                        <tr>
+                                            <th colspan="2">
+                                                <input class="buscar_actividad" type="text" placeholder="Introduzca el texto a buscar...">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Id</td>
+                                            <td>Proceso</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Almacen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Archivo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Auditoria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Comunicacion</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenido_texto" data-seccion="5">
+                        <h3 class="titulo">Verificar Hoja De Vida</h3>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga velit tempora placeat aliquam
+                        accusantium nesciunt recusandae dolorum aperiam voluptates quisquam voluptas, fugiat officia.
+                        Veritatis
+                    </div>
+                    <div class="contenido_texto" data-seccion="6">
+                        <h3 class="titulo">Reporte General</h3>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga velit tempora placeat aliquam
+                        accusantium
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
