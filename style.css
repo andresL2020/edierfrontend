@@ -344,3 +344,8 @@ main .contenedor {
 .ciud {
     margin-right: 100px;
 }
+
+.colortabdatosper {
+    background: var(--color-pimary);
+    color: var(--color-white);
+}
