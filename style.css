@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 :root {
     --color-white: hsl(252, 30%, 100%);
     --color-light: hsl(252, 30%, 95%);
     --color-gray: hwb(253 60% 30%);
     --color-pimary: hsl(145, 76%, 42%);
-    --color-blue:hsl(212, 52%, 37%);
+    --color-blue: hsl(212, 52%, 37%);
     --color-black: hsl(252, 30%, 10%);
-
     --border-radius: 2.7rem;
     --card-border-radius: 1rem;
     --btnencabezado-padding: 0.4rem 1.2rem;
     --btn-padding: 0.5rem 0.4rem;
     --search-padding: 0.6rem rem;
     --card-padding: 1rem;
-    --input-padding:.3rem;
-
+    --input-padding: .3rem;
     --sticky-top-left: -5.4rem;
     --sticky-top-right: -18rem;
 }
@@ -33,20 +30,22 @@
     border: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     color: var(--color-black);
     background: var(--color-light);
     overflow-x: hidden;
 }
 
+
 /* STYLOS GENERALES */
-.contenedor{
+
+.contenedor {
     width: 84%;
     margin: 0 auto;
 }
 
-.foto{
+.foto {
     width: 14rem;
     height: 5.5rem;
     border-radius: 1.5rem;
@@ -54,14 +53,14 @@ body{
     padding: 1px;
 }
 
-img{
+img {
     display: block;
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-input{
+input {
     border: 1px solid var(--color-gray);
     padding: var(--input-padding);
     border-radius: .2rem;
@@ -100,7 +99,7 @@ input{
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.19);
 }
 
-.btn_encabezado:hover{
+.btn_encabezado:hover {
     opacity: 0.7;
 }
 
@@ -113,8 +112,10 @@ input{
     color: white;
 }
 
+
 /* =================NAVBAR================== */
-nav{
+
+nav {
     width: 100%;
     background: var(--color-white);
     padding: 0.2rem;
@@ -123,38 +124,41 @@ nav{
     z-index: 10;
 }
 
-nav .contenedor{
+nav .contenedor {
     display: flex;
     align-items: center;
 }
 
+
 /* --------MAIN--------- */
-main{
+
+main {
     position: relative;
     top: 6.6rem;
     height: 100vh;
 }
 
-main .contenedor{
+main .contenedor {
     background: var(--color-white);
     height: 100%;
 }
 
-
-.contenedorhijo{
+.contenedorhijo {
     border-bottom: 1px solid var(--color-pimary);
     width: 100%;
 }
 
-.secciones{
+.secciones {
     margin-top: 1rem;
 }
 
+
 /* -----------ENCABEZADO-------------- */
 
-.secciones .btn_encabezado{
+.secciones .btn_encabezado {
     margin: 0 -1.3px;
 }
+
 
 /* .secciones .btn:focus{
     background-color: var(--color-gray);
@@ -164,13 +168,14 @@ main .contenedor{
     background-color: var(--color-gray);
 }
 
+
 /* ------------CONTENIDO------------------ */
 
-.contenido{
+.contenido {
     position: relative;
 }
 
-.contenido_texto{
+.contenido_texto {
     position: absolute;
     background-color: var(--color-white);
     padding: .5rem;
@@ -178,18 +183,22 @@ main .contenedor{
     transform: scale(0);
 }
 
-.block{
+.block {
     transform: scale(1);
     z-index: 1;
 }
 
-.titulo{
+.titulo {
     margin-left: 1.5rem;
 }
+
+
 /* -------CONTENIDO PROCESOS----------- */
+
+
 /* -------CONTENIDO PROCESOS TABLAS----------- */
 
-.contenido_tabla{
+.contenido_tabla {
     border-collapse: collapse;
     font-size: 0.9rem;
     min-width: 15rem;
@@ -199,109 +208,139 @@ main .contenedor{
     margin-left: 1.5rem;
 }
 
-.contenido_tabla thead tr{
+.contenido_tabla thead tr {
     background-color: var(--color-gray);
     color: var(--color-white);
     text-align: left;
 }
 
 .contenido_tabla th,
-.contenido_tabla td{
+.contenido_tabla td {
     padding: .7rem .7rem;
 }
 
-.contenido_tabla tbody tr{
+.contenido_tabla tbody tr {
     border-bottom: 1px solid var(--color-gray);
 }
 
-.contenido_tabla tbody tr:nth-child(2n){
+.contenido_tabla tbody tr:nth-child(2n) {
     background-color: #f3f3f3;
 }
 
-.contenido_tabla tbody tr:last-of-type{
+.contenido_tabla tbody tr:last-of-type {
     border-bottom: 2px solid var(--color-gray);
 }
+
+
 /* -------CONTENIDO PROCESOS FORMULARIO----------- */
-.registrar{
+
+.registrar {
     display: grid;
     grid-template-columns: 40vw auto;
     column-gap: .3rem;
     margin-top: .8rem;
 }
 
-.formulario_procesos .for_proceso{
+.formulario_procesos .for_proceso {
     display: flex;
     gap: 1rem;
     align-items: flex-end;
 }
 
-.formulario_procesos .for_proceso .input_proceso{
+.formulario_procesos .for_proceso .input_proceso {
     width: 20rem;
     display: block;
     padding: .4rem;
 }
+
 
 /* --------CONTENIDO ACTIVIDA--------- */
+
+
 /* -------FORMULARIO--------- */
-.formulario_actividad .label_actividad{
+
+.formulario_actividad .label_actividad {
     display: block;
     margin-top: 1rem;
 }
 
-.input_actividad{
+.input_actividad {
     width: 20rem;
     display: block;
     padding: .4rem;
 }
 
-.formulario_actividad .btn_actividad{
+.formulario_actividad .btn_actividad {
     margin-top: 1rem;
 }
 
-.formulario_actividad{
+.formulario_actividad {
     padding-left: 1.5rem;
 }
 
-.contenedor_tabla .buscar_actividad{
+.contenedor_tabla .buscar_actividad {
     display: block;
     width: 100%;
 }
 
+
 /* --------CONTENIDO REQUISITO LEGAL--------- */
+
+
 /* -------FORMULARIO--------- */
-.formulario_rlegales .for_rlegales{
+
+.formulario_rlegales .for_rlegales {
     display: flex;
     gap: 1rem;
     align-items: flex-end;
 }
 
-.formulario_rlegales .for_rlegales .input_requisito{
+.formulario_rlegales .for_rlegales .input_requisito {
     width: 20rem;
     display: block;
     padding: .4rem;
 }
 
+
 /* --------CONTENIDO REQUISITO LEGAL--------- */
 
-.registrar2{
+.registrar2 {
     display: grid;
     grid-template-columns: 26vw 26vw 26vw;
     column-gap: .3rem;
     margin-top: .8rem;
 }
 
-.contenedor_tabla1 .buscar_actividad{
+.contenedor_tabla1 .buscar_actividad {
     display: block;
     width: 100%;
 }
 
-.contenedor_tabla2 .buscar_actividad{
+.contenedor_tabla2 .buscar_actividad {
     display: block;
     width: 100%;
 }
 
-.contenedor_tabla3 .buscar_actividad{
+.contenedor_tabla3 .buscar_actividad {
     display: block;
     width: 100%;
 }
 
+.hola {
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.hola1 {
+    margin-top: 30px;
+}
+
+.form-label {
+    margin-right: 10px;
+}
+
+.ciud {
+    margin-right: 100px;
+}
